@@ -1,28 +1,28 @@
 angular.module("car", ['ngAnimate']).controller("myCtrl", ["$scope", function($scope) {
     $scope.check = function() {
         var tmp = "car";
-        $scope.equal = angular.equals($scope.result,tmp);
+        return angular.equals($scope.result.toLowerCase(),tmp);
     };
 }]);
 
 angular.module("bicycle", ['ngAnimate']).controller("myCtrl", ["$scope", function($scope) {
     $scope.check = function() {
         var tmp = "bicycle";
-        $scope.equal = angular.equals($scope.result,tmp);
+        return angular.equals($scope.result.toLowerCase(),tmp);
     };
 }]);
 
 angular.module("motorbike", ['ngAnimate']).controller("myCtrl", ["$scope", function($scope) {
     $scope.check = function() {
         var tmp = "motorbike";
-        $scope.equal = angular.equals($scope.result,tmp);
+        return angular.equals($scope.result.toLowerCase(),tmp);
     };
 }]);
 
 angular.module("bus", ['ngAnimate']).controller("myCtrl", ["$scope", function($scope) {
     $scope.check = function() {
         var tmp = "bus";
-        $scope.equal = angular.equals($scope.result,tmp);
+        return angular.equals($scope.result.toLowerCase(),tmp);
     };
 }]);
 
