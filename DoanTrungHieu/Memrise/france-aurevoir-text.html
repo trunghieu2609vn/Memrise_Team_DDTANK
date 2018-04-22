@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="./image/icontag.png">
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/tag1.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
@@ -36,20 +35,8 @@
                 <a class="navbar-brand" href="./page1-0.html">MEMRISE</a>
             </div>
             <ul class="nav navbar-nav">
-                    <li role="presentation" ><a href="./page1-1.html">Trang chủ</a></li>
-                    <li role="presentation" class="active"><a href="france-bonjour-text.html">Khóa học</a></li>
-
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            <span class="glyphicon glyphicon-user"></span>
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <img src="./image/user.png" height="50" width="50">
-                            <li><a href="./page1-0.html" style="color: #A52A2A;"><b>Đăng xuất</b></a></li>
-                        
-                        </ul>
-                    </li>
+                <li role="presentation" ><a href="./page1-1.html">Trang chủ</a></li>
+                <li role="presentation"class="active"><a href="./page2-0.html">Khóa học</a></li>
              </ul>
         </div>
     </nav>
@@ -60,11 +47,11 @@
     </center>
     <center>
         <div class="container" >
-            <img src="image/france-xinchao.jpg" class="img-responsive" style="height: 200px;">
+            <img src="image/france-tambiet.jpg" class="img-responsive" style="height: 200px;">
         </div>
         <br><br>
     </center>
-        <div ng-app="bonjour" ng-controller="myCtrl" class="container">
+        <div ng-app="au revoir" ng-controller="myCtrl" class="container">
             <center>
             <p><strong>Đáp án của tôi là:</strong></p>
             <input type="text" ng-model="result">
@@ -74,7 +61,7 @@
             <div ng-show="equal">
                 <p class="alert alert-success container">
                     <strong>Chúc mừng!!!</strong>  
-                    <a href="france-aurevoir-text.html">
+                    <a href="france-camsur-text.html">
                         <button class="btn btn-success">Qua màn kế tiếp</button>
                     </a>
                 </p>

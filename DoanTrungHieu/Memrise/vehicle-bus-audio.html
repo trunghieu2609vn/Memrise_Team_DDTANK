@@ -23,14 +23,9 @@
             margin-left: auto;
             margin-right: auto;
         }
-        #course {
-            background-color: #D3EDBA;
-            height: 100%;
-            margin-bottom: 50px;
-        }
     </style>
 </head>
-<body id="course">
+<body id="course-content">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -59,22 +54,20 @@
    			<h1>Khóa Tiếng Anh</h1>
    		</div>
     </center>
-    <center>
-        <div class="container" style="height: 200px;">
+        <div class="container">
             <br><br><br><br><br>
-            <audio controls>
+            <center>
+            <audio autoplay controls>
                 <source src="audio/bus.mp3" type="audio/mpeg">
             </audio>
+        </center>
         </div>
         <br><br>
-    </center>
         <div ng-app="bus" ng-controller="myCtrl" class="container">
             <center>
             <p><strong>Đáp án của tôi là:</strong></p>
             <input type="text" ng-model="result">
-            </br><br>
-            <input class="btn btn-primary btn-lg" type="button" value="Nộp" ng-click="check()">
-            <br><br>
+            </br><br><br><br>
             <div ng-if="check()">
                 <p class="alert alert-success container">
                     <strong>Chúc mừng!!!</strong>  
@@ -88,7 +81,5 @@
             </div>
             </center>
         </div>
-    <br><br><br><br><br><br>
-    
 </body>
 </html>
